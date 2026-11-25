@@ -1,0 +1,1 @@
+const http=require('http'),fs=require('fs');const page=fs.readFileSync('index.html');http.createServer((q,r)=>{r.setHeader('Content-Type','text/html; charset=utf-8');r.end(page)}).listen(process.env.PORT||3000,'0.0.0.0');
